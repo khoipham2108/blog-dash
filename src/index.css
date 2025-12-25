@@ -1,20 +1,21 @@
 /* Reset & Base */
 :root {
-  --primary: #4f46e5;
-  --primary-hover: #4338ca;
-  --bg-dark: #1f2937;
-  --bg-light: #f3f4f6;
+  /* Màu xanh dương Google/Facebook */
+  --primary: #007bff;        
+  --primary-hover: #0056b3;
+  --bg-dark: #1e293b;
+  --bg-light: #f8fafc;
   --white: #ffffff;
-  --text-main: #111827;
-  --text-muted: #6b7280;
-  --border: #e5e7eb;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg-light); color: var(--text-main); }
 
 /* Login Page */
-.login-container { display: flex; height: 100vh; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.login-container { display: flex; height: 100vh; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);}
 .login-card { background: var(--white); padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
 .login-card h2 { margin-bottom: 0.5rem; color: var(--text-main); }
 .login-card p { color: var(--text-muted); margin-bottom: 2rem; }
