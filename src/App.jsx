@@ -5,6 +5,7 @@ import DashboardLayout from './pages/DashboardLayout';
 import PostList from './pages/PostList';
 import PostDetail from './pages/PostDetail';
 import ProtectedRoute from './components/ProtectedRoute';
+import Profile from './pages/Profile';
 
 // Cấu hình Router theo yêu cầu PDF
 const router = createBrowserRouter([
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
                 element: <DashboardLayout />,
                 children: [
                     { index: true, element: <PostList /> }, // Mặc định hiện danh sách
-                    { path: "post/:postId", element: <PostDetail /> } // Dynamic route [cite: 196]
+                    { path: "post/:postId", element: <PostDetail /> } ,
+                    { path: "profile", element: <Profile /> }// Dynamic route [cite: 196]
                 ]
             }
         ]
